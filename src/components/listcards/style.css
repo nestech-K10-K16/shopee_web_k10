@@ -1,0 +1,12 @@
+.container-listcards__title-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-listcards__list-items {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

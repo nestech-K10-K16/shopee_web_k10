@@ -1,0 +1,36 @@
+/* text-colors */
+.text-color_Accent {
+  color: var(--color-Accent);
+}
+
+.text-color_Black {
+  color: var(--color-Black);
+}
+
+/* text-style */
+.text-font-family_default {
+  font-family: var(--Font-Family);
+}
+
+.text-default {
+  font-weight: var(--Font-Weight-Regular);
+  font-size: var(--text-16px);
+  line-height: 1.687rem;
+}
+
+.text-heading1 {
+  font-weight: var(--Font-Weight-Medium);
+  font-size: 2.0625rem;
+}
+
+.text-heading3 {
+  font-weight: var(--Font-Weight-Medium);
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+}
+
+.text-heading4 {
+  font-weight: var(--Font-Weight-Medium);
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}

@@ -1,0 +1,12 @@
+#container-cardshop {
+  width: 23.75rem;
+  height: 29.5rem;
+}
+
+#container-cardshop > img {
+  width: 100%;
+}
+
+.container-cardshop__label-group > p {
+  padding: 4px 0;
+}
