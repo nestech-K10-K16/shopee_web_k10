@@ -13,9 +13,22 @@
 }
 
 .container-footer_content-group1 a {
+  color: var(--color-DarkGray);
   padding-right: 32px;
 }
 
 .container-footer_content-group2 a {
   padding-left: 16px;
+}
+
+.container-footer_content-group2 a i {
+  color: var(--color-DarkGray);
+}
+
+.container-footer_content-group1 a:hover {
+  color: var(--color-Black);
+}
+
+.container-footer_content-group2 a:hover i {
+  color: var(--color-Black);
 }

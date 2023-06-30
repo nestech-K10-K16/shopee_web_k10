@@ -34,3 +34,8 @@
   font-size: 1.25rem;
   line-height: 1.25rem;
 }
+
+.text-body-large {
+  font-weight: var(--Font-Weight-Bold);
+  font-size: var(--text-16px);
+}

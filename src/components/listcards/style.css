@@ -10,3 +10,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.container-listcards__title-group button:hover {
+  color: var(--color-Black);
+}

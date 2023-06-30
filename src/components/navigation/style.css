@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px 0;
-  border-bottom: 1px solid var(--color-Gray);
+  /* border-bottom: 1px solid var(--color-Gray); */
   margin-bottom: 32px;
 }
 
@@ -17,10 +17,12 @@
   border-right: 2px solid var(--color-DarkGray);
 }
 
-.container-home--header__navigation-child1 a {
-  padding: 0 16px;
+.container-home--header__navigation-child1 a,
+.container-home--header__navigation-child2 a {
+  padding: 16px 16px;
 }
 
-.container-home--header__navigation-child2 button {
-  padding: 0 16px;
+.container-home--header__navigation-child1 a.active,
+.container-home--header__navigation-child2 a.active {
+  border-bottom: 1px solid var(--color-Black);
 }

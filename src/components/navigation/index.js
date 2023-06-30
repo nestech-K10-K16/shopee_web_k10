@@ -32,9 +32,16 @@ const Navigation = () => {
             container-home--header__navigation-child2
             "
                 >
-                    <AppButton type={BUTTON_TYPE.BTN_ICON} path={IC_search} />
-                    <AppButton type={BUTTON_TYPE.BTN_ICON} path={IC_cart} />
-                    <AppButton type={BUTTON_TYPE.BTN_ICON} path={IC_user} />
+                    <NavLink to={'/search'}>
+                        <AppButton type={BUTTON_TYPE.BTN_ICON} path={IC_search} />
+                    </NavLink>
+                    <NavLink to={'/cart'}>
+                        <AppButton type={BUTTON_TYPE.BTN_ICON} path={IC_cart} />
+                    </NavLink>
+                    <NavLink to={'/user'}>
+                        <AppButton type={BUTTON_TYPE.BTN_ICON} path={IC_user} />
+                    </NavLink>
+
                 </div>
             </div>
         </div>

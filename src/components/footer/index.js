@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import { IC_facebook, IC_in, IC_instagram, IC_twitter } from '../../assets';
 import './style.css'
 
 const Footer = () => {
@@ -17,10 +16,10 @@ const Footer = () => {
             <div className='container-footer_content-group2'>
                 <p>© 2021 Shelly. Terms of use and privacy policy.</p>
                 <div>
-                    <a><img src={IC_in} /></a>
-                    <a><img src={IC_facebook} /></a>
-                    <a><img src={IC_instagram} /></a>
-                    <a><img src={IC_twitter} /></a>
+                    <a><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a><i class="fa-brands fa-facebook-f"></i></a>
+                    <a><i class="fa-brands fa-instagram"></i></a>
+                    <a><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
         </div>
