@@ -7,18 +7,18 @@
   position: relative;
 }
 
-.container-cardshop__image > div {
-  visibility: hidden;
+.container-cardshop__image > button {
+  display: none;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 1.5rem;
   background-color: var(--color-White-transparent);
-  transition: ease-in-out;
+  transition: 2s;
 }
 
-.container-cardshop__image > div > p {
+.container-cardshop__image > button > p {
   margin: auto;
 }
 
@@ -31,6 +31,6 @@
 }
 
 /* hover */
-.container-cardshop__image:hover > div {
-  visibility: visible;
+.container-cardshop__image:hover > button {
+  display: block;
 }

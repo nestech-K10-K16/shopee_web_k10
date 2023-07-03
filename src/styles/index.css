@@ -1,3 +1,7 @@
 @import "./constants.css";
 @import "./textStyle.css";
 @import "./style.css";
+
+.container-main-router {
+  padding: 64px 96px;
+}

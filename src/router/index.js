@@ -18,8 +18,8 @@ const MainRoute = () => {
     }
 
     return (
-        <div style={{ padding: '64px 96px' }}>
-            <BrowserRouter>
+        <BrowserRouter>
+            <div className='container-main-router'>
                 <Routes>
                     {appRoute.map((route) => {
                         const Component = route.component
@@ -37,8 +37,9 @@ const MainRoute = () => {
                         )
                     })}
                 </Routes>
-            </BrowserRouter>
-        </div>
+            </div>
+        </BrowserRouter>
+
     )
 }
 

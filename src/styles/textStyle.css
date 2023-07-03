@@ -1,10 +1,14 @@
 /* text-colors */
-.text-color_Accent {
+.text-color_accent {
   color: var(--color-Accent);
 }
 
-.text-color_Black {
+.text-color_black {
   color: var(--color-Black);
+}
+
+.text-color-white {
+  color: var(--color-White);
 }
 
 /* text-style */
@@ -23,8 +27,14 @@
   font-size: 2.0625rem;
 }
 
+.text-heading2 {
+  font-weight: var(--Font-Weight-Regular);
+  font-size: 1.625rem;
+  line-height: 2.1875rem;
+}
+
 .text-heading3 {
-  font-weight: var(--Font-Weight-Medium);
+  font-weight: var(--Font-Weight-Regular);
   font-size: 1.25rem;
   line-height: 1.625rem;
 }
@@ -36,6 +46,6 @@
 }
 
 .text-body-large {
-  font-weight: var(--Font-Weight-Bold);
+  font-weight: var(--Font-Weight-bold);
   font-size: var(--text-16px);
 }

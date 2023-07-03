@@ -8,13 +8,13 @@ const CardShop = () => {
         <AppButton id='container-cardshop'>
             <div className='container-cardshop__image'>
                 <img src={IMG_cardshop1} />
-                <div>
-                    <p className='text-font-family_default text-body-large text-color_Black'>ADD TO CART</p>
-                </div>
+                <AppButton>
+                    <p className='text-font-family_default text-body-large text-color_black'>ADD TO CART</p>
+                </AppButton>
             </div>
             <div className='container-cardshop__label-group'>
                 <p className='text-font-family_default text-heading3'>Lira Earrings</p>
-                <p className='text-font-family_default text-heading4 text-color_Accent'>$ 20,00</p>
+                <p className='text-font-family_default text-heading4 text-color_accent'>$ 20,00</p>
             </div>
         </AppButton>
     )

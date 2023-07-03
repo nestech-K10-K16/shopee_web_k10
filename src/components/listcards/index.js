@@ -11,7 +11,7 @@ const ListCard = () => {
                 <AppButton className='
                 text-font-family_default 
                 text-heading4 
-                text-color_Accent'>
+                text-color_accent'>
                     View All
                 </AppButton>
             </div>

@@ -13,7 +13,7 @@
 }
 
 .container-footer_content-group1 a {
-  color: var(--color-DarkGray);
+  color: var(--color-dark-gray);
   padding-right: 32px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .container-footer_content-group2 a i {
-  color: var(--color-DarkGray);
+  color: var(--color-dark-gray);
 }
 
 .container-footer_content-group1 a:hover {

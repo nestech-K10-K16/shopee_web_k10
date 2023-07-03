@@ -8,7 +8,12 @@ export const ROUTE_ID = {
 
 export const PATHNAME_LIST = {
   HOME: "/",
-  SHOP: "/shop",
+  SHOP: "/Shop",
+  BLOG: "/Blog",
+  OUR_STORY: "/Ourstory",
+  SEARCH: "/Search",
+  CART: "/Cart",
+  USER: "/User",
 };
 
 export const LAYOUT_TYPE = {

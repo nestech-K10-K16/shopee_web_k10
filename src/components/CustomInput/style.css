@@ -1,0 +1,22 @@
+.container-CustomInput {
+  position: relative;
+}
+
+.container-CustomInput__icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 4px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+}
+
+.container-CustomInput__input {
+  height: 50px;
+  box-sizing: border-box;
+  padding-right: 8rem;
+  border: none;
+  border-bottom: 1px solid var(--color-Black);
+}
