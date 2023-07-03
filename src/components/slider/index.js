@@ -40,6 +40,7 @@ const Slider = () => {
             <SliderItem />
             <SliderItem />
             <SliderItem />
+            <SliderItem />
         </Carousel>
     )
 }
