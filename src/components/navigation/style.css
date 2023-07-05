@@ -23,5 +23,5 @@
 
 .container-home--header__navigation-child1 a.active,
 .container-home--header__navigation-child2 a.active {
-  border-bottom: 1px solid var(--color-Black);
+  border-bottom: 1px solid var(--color-black);
 }

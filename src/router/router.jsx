@@ -35,7 +35,7 @@ export const ShopRoute = {
   id: ROUTE_ID.SHOP,
   path: PATHNAME_LIST.SHOP,
   component: ShopPage,
-  layout: LAYOUT_TYPE.LAYOUT_DEFAULT,
+  layout: LAYOUT_TYPE.LAYOUT_SIDE_BAR,
 };
 
 export const appRoute = [HomeRoute, ShopRoute];

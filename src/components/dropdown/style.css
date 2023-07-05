@@ -1,0 +1,15 @@
+.dropdown-btn {
+  width: 261px;
+  height: 56px;
+  border: 2px solid var(--color-gray);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  margin: 8px 0;
+}
+
+.container-dropdown-item {
+  width: 261px;
+}

@@ -1,0 +1,11 @@
+.container-layout__content {
+  display: flex;
+}
+
+.container-layout__content div:first-child {
+  flex: 0.6;
+}
+
+.container-layout__content div:last-child {
+  flex: 2;
+}

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { LAYOUT_TYPE, appRoute } from './router'
 import LayoutDefault from './Layouts/LayoutDefault'
 import '../styles/index.css'
+import LayoutSidebar from './Layouts/LayoutSidebar'
 
 const MainRoute = () => {
 
@@ -11,7 +12,7 @@ const MainRoute = () => {
             case LAYOUT_TYPE.LAYOUT_DEFAULT:
                 return LayoutDefault
             case LAYOUT_TYPE.LAYOUT_SIDE_BAR:
-                return Fragment
+                return LayoutSidebar
             default:
                 return LayoutDefault
         }

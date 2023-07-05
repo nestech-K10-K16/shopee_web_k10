@@ -1,10 +1,10 @@
-.container-CustomInput {
+.container-customInput {
   position: relative;
 }
 
-.container-CustomInput__icon {
-  height: 1.5rem;
-  width: 1.5rem;
+.container-customInput__icon {
+  height: 1.5em;
+  width: 1.5em;
   padding: 4px;
   position: absolute;
   box-sizing: border-box;
@@ -13,10 +13,10 @@
   transform: translateY(-50%);
 }
 
-.container-CustomInput__input {
+.container-customInput__feild-content {
   height: 50px;
   box-sizing: border-box;
-  padding-right: 8rem;
+  padding-right: 8em;
   border: none;
-  border-bottom: 1px solid var(--color-Black);
+  border-bottom: 1px solid var(--color-black);
 }

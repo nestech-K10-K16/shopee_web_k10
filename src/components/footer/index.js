@@ -12,7 +12,7 @@ const Footer = () => {
                     <Link to={'/terms'} className="text-default text-font-family_default text-color_black">TERMS OF SERVICES</Link>
                     <Link to={'/shipping'} className="text-default text-font-family_default text-color_black">SHIPPING AND RETURNS</Link>
                 </div>
-                <CustomInput placeholder={'Give an email, get the newsletter.'} />
+                <CustomInput icon={<i class="fa-solid fa-arrow-right-long"></i>} placeholder={'Give an email, get the newsletter.'} />
             </div>
             <div className='container-footer_content-group2'>
                 <p>© 2021 Shelly. Terms of use and privacy policy.</p>

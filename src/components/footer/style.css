@@ -1,5 +1,5 @@
 #container-footer {
-  border-top: 1px solid var(--color-Gray);
+  border-top: 1px solid var(--color-gray);
 }
 
 #container-footer > div {
@@ -26,9 +26,9 @@
 }
 
 .container-footer_content-group1 a:hover {
-  color: var(--color-Black);
+  color: var(--color-black);
 }
 
 .container-footer_content-group2 a:hover i {
-  color: var(--color-Black);
+  color: var(--color-black);
 }

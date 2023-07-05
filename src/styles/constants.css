@@ -2,22 +2,22 @@
 
 #root {
   /* COLORS */
-  --color-Accent: #a18a68;
-  --color-White: #ffffff;
-  --color-White-transparent: rgba(255, 255, 255, 0.5);
-  --color-Black: #000000;
+  --color-accent: #a18a68;
+  --color-white: #ffffff;
+  --color-white-transparent: rgba(255, 255, 255, 0.5);
+  --color-black: #000000;
   --color-dark-gray: #707070;
-  --color-Gray: #d8d8d8;
-  --color-LightGray: #efefef;
-  --color-Errors: #d82700;
+  --color-gray: #d8d8d8;
+  --color-light-gray: #efefef;
+  --color-errors: #d82700;
 
   /*Font-Family*/
   --Font-Family: "DM Sans";
 
   /* Font-Weight */
-  --Font-Weight-Regular: 400;
-  --Font-Weight-Medium: 500;
-  --Font-Weight-bold: 700;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold:: 700;
 
   /* SIZE */
   --text-16px: 16px;

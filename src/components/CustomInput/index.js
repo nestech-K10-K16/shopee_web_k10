@@ -1,15 +1,24 @@
 import React from 'react';
-import AppButton from "../Appbutton";
+import AppButton from '../Appbutton'
 import "./style.css"
 
-const CustomInput = ({ placeholder }) => {
+const CustomInput = ({ placeholder, icon, value, onchange, ...reset }) => {
     return (
-        <div class="container-CustomInput">
-            <div class="container-CustomInput__icon">
-                <i class="fa-solid fa-arrow-right-long"></i>
+        <div class="container-customInput">
+            <div class="container-customInput__icon">
+                <AppButton>
+                    {icon}
+                </AppButton>
             </div>
-            <input placeholder={placeholder} class="container-CustomInput__input"></input>
+            <input
+                value={value}
+                onchange={onchange}
+                placeholder={placeholder}
+                class="container-customInput__feild-content"
+                {...reset}
+            ></input>
         </div>
+
     )
 }
 
