@@ -1,12 +1,12 @@
 import React from "react";
-import { test } from "../../assets";
 import ListCard from "../../components/listcards";
+import Slider from "../../components/slider";
 import "./style.css";
 
 const home = () => {
     return (
         <div id="container-home">
-            <img src={test} style={{ width: '100%' }} />
+            <Slider />
             <ListCard />
         </div>
     );

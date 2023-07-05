@@ -3,10 +3,34 @@
   height: 29.5rem;
 }
 
+.container-cardshop__image {
+  position: relative;
+}
+
+.container-cardshop__image > button {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background-color: var(--color-white-transparent);
+  transition: 2s;
+}
+
+.container-cardshop__image > button > p {
+  margin: auto;
+}
+
 #container-cardshop > img {
-  width: 100%;
 }
 
 .container-cardshop__label-group > p {
   padding: 4px 0;
+  text-align: left;
+}
+
+/* hover */
+.container-cardshop__image:hover > button {
+  display: block;
 }

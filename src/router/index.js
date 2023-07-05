@@ -1,23 +1,46 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from '../pages/home'
-import Shop from '../pages/shop'
-import Navigation from '../components/navigation'
-import Footer from '../components/footer'
+import { LAYOUT_TYPE, appRoute } from './router'
+import LayoutDefault from './Layouts/LayoutDefault'
 import '../styles/index.css'
+import LayoutSidebar from './Layouts/LayoutSidebar'
 
 const MainRoute = () => {
+
+    const getLayout = (layout) => {
+        switch (layout) {
+            case LAYOUT_TYPE.LAYOUT_DEFAULT:
+                return LayoutDefault
+            case LAYOUT_TYPE.LAYOUT_SIDE_BAR:
+                return LayoutSidebar
+            default:
+                return LayoutDefault
+        }
+    }
+
     return (
-        <div style={{ padding: '64px 96px' }}>
-            <BrowserRouter>
-                <Navigation />
+        <BrowserRouter>
+            <div className='container-main-router'>
                 <Routes>
-                    <Route path={'/'} element={<Home />} />
-                    <Route path={'/shop'} element={<Shop />} />
+                    {appRoute.map((route) => {
+                        const Component = route.component
+                        const Layout = getLayout(route.layout)
+                        return (
+                            <Route
+                                key={route.id}
+                                path={route.path}
+                                element={
+                                    <Layout>
+                                        <Component />
+                                    </Layout>
+                                }
+                            />
+                        )
+                    })}
                 </Routes>
-                <Footer />
-            </BrowserRouter>
-        </div>
+            </div>
+        </BrowserRouter>
+
     )
 }
 

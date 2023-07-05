@@ -1,10 +1,14 @@
 /* text-colors */
-.text-color_Accent {
-  color: var(--color-Accent);
+.text-color_accent {
+  color: var(--color-accent);
 }
 
-.text-color_Black {
-  color: var(--color-Black);
+.text-color_black {
+  color: var(--color-black);
+}
+
+.text-color-white {
+  color: var(--color-white);
 }
 
 /* text-style */
@@ -13,24 +17,46 @@
 }
 
 .text-default {
-  font-weight: var(--Font-Weight-Regular);
+  font-weight: var(--font-weight-regular);
   font-size: var(--text-16px);
   line-height: 1.687rem;
 }
 
 .text-heading1 {
-  font-weight: var(--Font-Weight-Medium);
+  font-weight: var(--font-weight-medium);
   font-size: 2.0625rem;
 }
 
+.text-heading2 {
+  font-weight: var(--font-weight-regular);
+  font-size: 1.625rem;
+  line-height: 2.1875rem;
+}
+
 .text-heading3 {
-  font-weight: var(--Font-Weight-Medium);
+  font-weight: var(--font-weight-regular);
   font-size: 1.25rem;
   line-height: 1.625rem;
 }
 
 .text-heading4 {
-  font-weight: var(--Font-Weight-Medium);
+  font-weight: var(--font-weight-medium);
   font-size: 1.25rem;
   line-height: 1.25rem;
+}
+
+.text-heading5 {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-16px);
+  line-height: 1.6875rem;
+}
+
+.text-body-large {
+  font-weight: var(--font-weight-bold: );
+  font-size: var(--text-16px);
+}
+
+.text-body-medium {
+  font-weight: var(--font-weight-regular);
+  font-size: 0.875rem;
 }

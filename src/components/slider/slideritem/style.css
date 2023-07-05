@@ -1,0 +1,27 @@
+.container-slider {
+  position: relative;
+  background-image: url(../../../assets/imgs/test.png);
+  height: 40.375rem;
+  border-radius: 8px;
+}
+
+.container-slider__content {
+  position: absolute;
+  top: 226px;
+  left: 40px;
+}
+
+.container-slider__content__button {
+  margin-top: 48px;
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-bold: );
+  padding: 14px 30px;
+  border-radius: 6px;
+  border: 2px solid var(--color-white);
+  transition: 0.2s;
+}
+
+.container-slider__content__button:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
