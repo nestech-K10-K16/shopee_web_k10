@@ -1,6 +1,5 @@
 #container-cardshop {
-  width: 23.75rem;
-  height: 29.5rem;
+  width: 16rem;
 }
 
 .container-cardshop__image {
@@ -13,16 +12,17 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1.5rem;
+  height: 64px;
   background-color: var(--color-white-transparent);
-  transition: 2s;
+  animation: buttonUp 0.2s;
 }
 
 .container-cardshop__image > button > p {
   margin: auto;
 }
 
-#container-cardshop > img {
+.container-cardshop__image > img {
+  width: 100%;
 }
 
 .container-cardshop__label-group > p {
@@ -33,4 +33,17 @@
 /* hover */
 .container-cardshop__image:hover > button {
   display: block;
+}
+
+/* key framse */
+@keyframes buttonUp {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    height: 64px;
+  }
 }

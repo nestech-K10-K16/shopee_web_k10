@@ -3,9 +3,10 @@ import AppButton from '../Appbutton'
 import CardShop from '../cardshop'
 import './style.css'
 
-const ListCard = () => {
-    return (
-        <div id='container-listcards'>
+const ListCard = ({ showTitle = true }) => {
+
+    const renderTitle = () => {
+        return (
             <div className='container-listcards__title-group'>
                 <p className='text-font-family_default text-heading1'>Shop The Latest</p>
                 <AppButton className='
@@ -15,6 +16,12 @@ const ListCard = () => {
                     View All
                 </AppButton>
             </div>
+        )
+    }
+
+    return (
+        <div id='container-listcards'>
+            {showTitle ? renderTitle() : <></>}
             <div className='container-listcards__list-items'>
                 <CardShop />
                 <CardShop />

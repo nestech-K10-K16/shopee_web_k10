@@ -1,5 +1,6 @@
 .container-customInput {
   position: relative;
+  border-bottom: 1px solid var(--color-black);
 }
 
 .container-customInput__icon {
@@ -16,7 +17,6 @@
 .container-customInput__feild-content {
   height: 50px;
   box-sizing: border-box;
-  padding-right: 8em;
+  padding-right: 2rem;
   border: none;
-  border-bottom: 1px solid var(--color-black);
 }
