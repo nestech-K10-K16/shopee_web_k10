@@ -3,9 +3,9 @@ import { IMG_cardshop1 } from '../../assets'
 import AppButton from '../Appbutton'
 import './style.css'
 
-const CardShop = () => {
+const CardShop = ({ onClickCard }) => {
     return (
-        <AppButton id='container-cardshop'>
+        <AppButton onClick={onClickCard} id='container-cardshop'>
             <div className='container-cardshop__image'>
                 <img src={IMG_cardshop1} />
                 <AppButton>

@@ -3,7 +3,7 @@ import AppButton from '../Appbutton'
 import CardShop from '../cardshop'
 import './style.css'
 
-const ListCard = ({ showTitle = true }) => {
+const ListCard = ({ showTitle = true, renderItem }) => {
 
     const renderTitle = () => {
         return (
@@ -23,12 +23,7 @@ const ListCard = ({ showTitle = true }) => {
         <div id='container-listcards'>
             {showTitle ? renderTitle() : <></>}
             <div className='container-listcards__list-items'>
-                <CardShop />
-                <CardShop />
-                <CardShop />
-                <CardShop />
-                <CardShop />
-                <CardShop />
+                {renderItem}
             </div>
         </div>
     )
