@@ -2,12 +2,12 @@ import React from 'react';
 import { BUTTON_TYPE } from '../../constants/common';
 
 const AppButton = (props) => {
-    const { type = BUTTON_TYPE.DEFAULT, children, path, ...rest } = props;
+    const { type = BUTTON_TYPE.DEFAULT, children, path, onClick, ...rest } = props;
 
     switch (type) {
 
         case BUTTON_TYPE.ICON:
-            return <button {...rest}>
+            return <button onClick={onClick} {...rest}>
                 <img src={path} alt='' />
             </button>;
 

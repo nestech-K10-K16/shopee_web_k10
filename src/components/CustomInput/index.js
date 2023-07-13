@@ -2,7 +2,7 @@ import React from 'react';
 import AppButton from '../Appbutton'
 import "./style.css"
 
-const CustomInput = ({ placeholder, icon, value, onchange, ...reset }) => {
+const CustomInput = ({ width, placeholder, icon, value, onchange, ...reset }) => {
     return (
         <div class="container-customInput">
             <div class="container-customInput__icon">
@@ -11,6 +11,7 @@ const CustomInput = ({ placeholder, icon, value, onchange, ...reset }) => {
                 </AppButton>
             </div>
             <input
+                style={{ width: width }}
                 value={value}
                 onchange={onchange}
                 placeholder={placeholder}
