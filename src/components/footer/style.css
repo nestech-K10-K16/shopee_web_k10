@@ -9,16 +9,16 @@
 }
 
 .container-footer_content-group1 {
-  height: 80px;
+  height: 5rem;
 }
 
 .container-footer_content-group1 a {
   color: var(--color-dark-gray);
-  padding-right: 32px;
+  padding-right: 2rem;
 }
 
 .container-footer_content-group2 a {
-  padding-left: 16px;
+  padding-left: 1rem;
 }
 
 .container-footer_content-group2 a i {

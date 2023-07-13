@@ -6,16 +6,16 @@
 .container-customInput__icon {
   height: 1.5em;
   width: 1.5em;
-  padding: 4px;
+  padding: 0.25rem;
   position: absolute;
   box-sizing: border-box;
   top: 50%;
-  right: 2px;
+  right: 0.25rem;
   transform: translateY(-50%);
 }
 
 .container-customInput__feild-content {
-  height: 50px;
+  height: 3rem;
   box-sizing: border-box;
   padding-right: 2rem;
   border: none;

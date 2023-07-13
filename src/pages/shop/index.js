@@ -5,9 +5,6 @@ import './style.css'
 
 const shop = () => {
 
-    const test = () => {
-        console.log('first')
-    }
 
     const renderCardShop = () => {
         return (

@@ -1,15 +1,15 @@
 .dropdown-btn {
-  width: 261px;
-  height: 56px;
+  width: 16rem;
+  height: 3.5rem;
   border: 2px solid var(--color-gray);
-  border-radius: 4px;
+  border-radius: 0.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 8px;
-  margin: 8px 0;
+  padding: 0 0.5rem;
+  margin: 0.5rem 0;
 }
 
 .container-dropdown-item {
-  width: 261px;
+  width: 16rem;
 }
