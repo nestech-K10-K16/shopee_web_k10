@@ -12,7 +12,7 @@ const AppButton = (props) => {
             </button>;
 
         case BUTTON_TYPE.DEFAULT:
-            return <button {...rest}>{children}</button>;
+            return <button onClick={onClick} {...rest}>{children}</button>;
     }
 
 };

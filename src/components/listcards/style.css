@@ -11,12 +11,12 @@
 
 .container-listcards__list-items {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.container-listcards__list-items > button {
+.container-listcards__list-items > a {
   margin: 0.5rem;
 }
 

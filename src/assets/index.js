@@ -2,6 +2,7 @@
 export { default as IMG_logo } from './imgs/IMG_logo.svg'
 export { default as IMG_cardshop1 } from './imgs/IMG_cardshop1.svg'
 export { default as test } from './imgs/test.png'
+export { default as test2 } from './imgs/test2.svg'
 // Icons
 export { default as IC_cart } from './icons/IC_cart.svg'
 export { default as IC_search } from './icons/IC_search.svg'

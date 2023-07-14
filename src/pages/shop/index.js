@@ -5,14 +5,13 @@ import './style.css'
 
 const shop = () => {
 
-
     const renderCardShop = () => {
         return (
             <>
-                <CardShop onClickCard={() => console.log('first')} />
-                <CardShop onClickCard={() => console.log('first')} />
-                <CardShop onClickCard={() => console.log('first')} />
-                <CardShop onClickCard={() => console.log('first')} />
+                <CardShop />
+                <CardShop />
+                <CardShop />
+                <CardShop />
             </>
         )
     }

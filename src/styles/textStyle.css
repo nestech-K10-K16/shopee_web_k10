@@ -11,6 +11,10 @@
   color: var(--color-white);
 }
 
+.text-color-dark-gray {
+  color: var(--color-dark-gray);
+}
+
 /* text-style */
 .text-font-family_default {
   font-family: var(--Font-Family);
@@ -52,7 +56,7 @@
 }
 
 .text-body-large {
-  font-weight: var(--font-weight-bold: );
+  font-weight: var(--font-weight-bold);
   font-size: var(--text-16px);
 }
 
