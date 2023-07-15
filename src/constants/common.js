@@ -2,6 +2,10 @@ import DescriptionPanel from "../components/DescriptionPanel"
 import AditionalPanel from "../components/AditionalPanel"
 import ReviewPanel from "../components/ReviewPanel"
 
+export const COLORS = {
+    RED: '#F50000'
+}
+
 export const BUTTON_TYPE = {
     ICON: 1,
     DEFAULT: 2,

@@ -4,9 +4,8 @@ import AppButton from '../../components/Appbutton'
 import { BUTTON_TYPE } from '../../constants/common'
 import ListCard from '../../components/listcards'
 import CardShop from '../../components/cardshop'
-import './style.css'
 import TabView from '../../components/tabview'
-import Tabselector from '../../components/tabview/tabselector'
+import './style.css'
 
 const ShopDetail = () => {
 
@@ -62,7 +61,7 @@ const ShopDetail = () => {
                     </div>
                     <div className='container-shopdetail__content__social-icon-group'>
                         <div>
-                            <AppButton type={BUTTON_TYPE.LINK} path={IC_heart} href={'#'} />
+                            <AppButton type={BUTTON_TYPE.ICON} path={IC_heart} onClick={(event) => event.currentTarget.classList.toggle('filter-red')}></AppButton>
                         </div>
                     </div>
                     <div className='container-shopdetail__content__categories_group'>

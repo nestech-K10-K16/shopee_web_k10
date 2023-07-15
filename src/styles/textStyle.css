@@ -1,3 +1,8 @@
+/* filter colors */
+.filter-red {
+  filter: invert(26%) sepia(84%) saturate(6809%) hue-rotate(355deg)
+    brightness(96%) contrast(121%);
+}
 /* text-colors */
 .text-color_accent {
   color: var(--color-accent);
