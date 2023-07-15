@@ -25,8 +25,14 @@
   padding-bottom: 1.5rem;
 }
 
-.container-shopdetail__content__label-group {
+.container-shopdetail__content__evaluate-group {
   margin-top: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.container-shopdetail__content__evaluate-group > p {
+  margin-left: 1rem;
 }
 
 .container-shopdetail__content__description {

@@ -15,6 +15,10 @@
   color: var(--color-dark-gray);
 }
 
+.text-color-gray {
+  color: var(--color-gray);
+}
+
 /* text-style */
 .text-font-family_default {
   font-family: var(--Font-Family);

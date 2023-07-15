@@ -1,0 +1,7 @@
+.container-tabView {
+  display: flex;
+}
+
+.container-tabView button {
+  margin-right: 1rem;
+}
