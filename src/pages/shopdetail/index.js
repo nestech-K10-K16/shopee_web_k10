@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { IC_heart, IC_star, IMG_cardshop1, test2 } from '../../assets'
 import AppButton from '../../components/Appbutton'
 import { BUTTON_TYPE } from '../../constants/common'
@@ -6,10 +6,12 @@ import ListCard from '../../components/listcards'
 import CardShop from '../../components/cardshop'
 import TabView from '../../components/tabview'
 import './style.css'
+import QuantityInput from '../../components/quantityInput'
 
 const ShopDetail = () => {
 
     const [tt, settt] = useState(false)
+    const countItem = useRef(0)
 
     console.log('shopdetail')
 
@@ -56,8 +58,8 @@ const ShopDetail = () => {
                         </p>
                     </div>
                     <div className='container-shopdetail__content__button-group'>
-                        <img src={test2} />
-                        <AppButton onClick={() => settt(!tt)}>ADD TO CART</AppButton>
+                        <QuantityInput getCount={(e) => countItem.current = e} />
+                        <AppButton onClick={() => console.log(countItem.current)}>ADD TO CART</AppButton>
                     </div>
                     <div className='container-shopdetail__content__social-icon-group'>
                         <div>

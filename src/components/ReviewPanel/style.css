@@ -1,0 +1,33 @@
+#container-review {
+  display: flex;
+}
+
+.container-review__list-review {
+  margin-right: 5.5rem;
+}
+
+.container-review__list-review > p {
+  margin-bottom: 5.4375rem;
+}
+
+.container-review__review-form > p:first-child {
+  margin-bottom: 0.75rem;
+}
+
+.container-review__review-form > p:nth-child(2) {
+  margin-bottom: 5.4375rem;
+}
+
+.container-review__review-form > div {
+  margin-bottom: 3rem;
+}
+
+.container-review__ratting-selector {
+  margin-top: 5.75rem;
+}
+
+.container-review__sumbit-button {
+  padding: 1rem 2.125rem;
+  background-color: var(--color-black);
+  border-radius: 0.25rem;
+}

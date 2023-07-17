@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React from 'react'
 import { TabPanel, useTabs } from 'react-headless-tabs';
 import { TABVIEW_SHOP_DETAIL, tabsShopDetail } from '../../constants/common';
 import Tabselector from './tabselector';
@@ -34,4 +34,4 @@ const TabView = () => {
     )
 }
 
-export default memo(TabView)
+export default TabView

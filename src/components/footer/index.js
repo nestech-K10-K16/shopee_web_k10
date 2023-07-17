@@ -1,7 +1,7 @@
 import React from 'react'
 import CustomInput from '../CustomInput';
 import { Link } from "react-router-dom";
-import { INPUT_SIZE } from '../../constants/common';
+import { INPUT_SIZE, INPUT_TYPE } from '../../constants/common';
 import { IC_arrow_right, IC_facebook, IC_in, IC_instagram, IC_twitter } from '../../assets';
 import './style.css'
 
@@ -14,7 +14,12 @@ const Footer = () => {
                     <Link to={'/terms'} className="text-default text-font-family_default text-color_black">TERMS OF SERVICES</Link>
                     <Link to={'/shipping'} className="text-default text-font-family_default text-color_black">SHIPPING AND RETURNS</Link>
                 </div>
-                <CustomInput width={INPUT_SIZE.LONG} icon={<img src={IC_arrow_right} />} placeholder={'Give an email, get the newsletter.'} />
+                <CustomInput
+                    type={INPUT_TYPE.ICON}
+                    width={INPUT_SIZE.LONG}
+                    icon={<img src={IC_arrow_right} />}
+                    placeholder={'Give an email, get the newsletter.'}
+                />
 
             </div>
             <div className='container-footer_content-group2'>

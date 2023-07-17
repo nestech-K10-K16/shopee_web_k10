@@ -3,6 +3,10 @@
   border-bottom: 1px solid var(--color-black);
 }
 
+.container-customInput > p {
+  margin-bottom: 1rem;
+}
+
 .container-customInput__icon {
   height: 1.5em;
   width: 1.5em;

@@ -3,13 +3,20 @@ import AditionalPanel from "../components/AditionalPanel"
 import ReviewPanel from "../components/ReviewPanel"
 
 export const COLORS = {
-    RED: '#F50000'
+    RED: '#F50000',
+    BLACK: '#000000'
 }
 
 export const BUTTON_TYPE = {
     ICON: 1,
     DEFAULT: 2,
     LINK: 3
+}
+
+export const INPUT_TYPE = {
+    DEFAULT: 1,
+    ICON: 2,
+    HAVE_LABEL: 3
 }
 
 export const INPUT_SIZE = {
