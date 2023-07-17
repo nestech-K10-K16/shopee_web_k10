@@ -1,3 +1,8 @@
+/* filter colors */
+.filter-red {
+  filter: invert(26%) sepia(84%) saturate(6809%) hue-rotate(355deg)
+    brightness(96%) contrast(121%);
+}
 /* text-colors */
 .text-color_accent {
   color: var(--color-accent);
@@ -9,6 +14,14 @@
 
 .text-color-white {
   color: var(--color-white);
+}
+
+.text-color-dark-gray {
+  color: var(--color-dark-gray);
+}
+
+.text-color-gray {
+  color: var(--color-gray);
 }
 
 /* text-style */
@@ -52,11 +65,12 @@
 }
 
 .text-body-large {
-  font-weight: var(--font-weight-bold: );
+  font-weight: var(--font-weight-bold);
   font-size: var(--text-16px);
 }
 
 .text-body-medium {
   font-weight: var(--font-weight-regular);
   font-size: 0.875rem;
+  line-height: 1.4rem;
 }

@@ -1,14 +1,17 @@
 import HomePage from "../pages/home";
 import ShopPage from "../pages/shop";
+import ShopDetail from "../pages/shopdetail";
 
 export const ROUTE_ID = {
   HOME: "HomeRoute",
   SHOP: "ShopRoute",
+  SHOP_DETAIL: "ShopDetailRoute",
 };
 
 export const PATHNAME_LIST = {
   HOME: "/",
   SHOP: "/Shop",
+  SHOP_DETAIL: "/shop/detail",
   BLOG: "/Blog",
   OUR_STORY: "/Ourstory",
   SEARCH: "/Search",
@@ -38,4 +41,11 @@ export const ShopRoute = {
   layout: LAYOUT_TYPE.LAYOUT_SIDE_BAR,
 };
 
-export const appRoute = [HomeRoute, ShopRoute];
+export const ShopDetailRoute = {
+  id: ROUTE_ID.SHOP_DETAIL,
+  path: PATHNAME_LIST.SHOP_DETAIL,
+  component: ShopDetail,
+  layout: LAYOUT_TYPE.LAYOUT_DEFAULT,
+};
+
+export const appRoute = [HomeRoute, ShopRoute, ShopDetailRoute];

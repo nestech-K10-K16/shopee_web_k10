@@ -1,0 +1,11 @@
+.container-tabView {
+  display: flex;
+}
+
+.container-tabPanel {
+  padding: 2.5rem 0;
+}
+
+.container-tabView button {
+  margin-right: 1rem;
+}

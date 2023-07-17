@@ -3,6 +3,7 @@
 #root {
   /* COLORS */
   --color-accent: #a18a68;
+  --color-red: #FD0000;
   --color-white: #ffffff;
   --color-white-transparent: rgba(255, 255, 255, 0.5);
   --color-black: #000000;

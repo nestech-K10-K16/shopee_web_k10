@@ -1,0 +1,19 @@
+#container-review-box {
+  width: 36.25rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.container-review-box__title-group {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.container-review-box__ratting {
+  margin-bottom: 1.5rem;
+}
+
+.container-review-box__title-group > p:first-child {
+  margin-right: 1rem;
+}
