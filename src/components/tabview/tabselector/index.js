@@ -13,7 +13,7 @@ const Tabselector = ({
             onClick={onClick}
             id='tab-selector'
             className={`text-font-family_default text-heading3 ${isActive
-                ? 'text-color_black boder-color-black'
+                ? 'text-color-black boder-color-black'
                 : 'text-color-dark-gray'
                 }`}
         >

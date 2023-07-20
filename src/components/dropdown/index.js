@@ -10,7 +10,7 @@ const DropDown = ({ title, onItemClick }) => {
     const renderMenubutton = () => {
         return <MenuButton
             className={'dropdown-btn'}>
-            <p className='text-font-family_default text-body-medium text-color_black'>{title}</p>
+            <p className='text-font-family_default text-body-medium text-color-black'>{title}</p>
             <img src={IC_arrow_down} />
         </MenuButton>
     }

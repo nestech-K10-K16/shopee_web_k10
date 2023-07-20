@@ -11,13 +11,13 @@ const CardShop = () => {
             <div to={PATHNAME_LIST.SHOP_DETAIL} id='container-cardshop'>
                 <div className='container-cardshop__image'>
                     <img src={IMG_cardshop1} />
-                    <AppButton className='text-font-family_default text-body-large text-color_black'>
+                    <AppButton className='text-font-family_default text-body-large text-color-black'>
                         ADD TO CART
                     </AppButton>
                 </div>
                 <div className='container-cardshop__label-group'>
-                    <p className='text-font-family_default text-heading3 text-color_black'>Lira Earrings</p>
-                    <p className='text-font-family_default text-heading4 text-color_accent'>$ 20,00</p>
+                    <p className='text-font-family_default text-heading3 text-color-black'>Lira Earrings</p>
+                    <p className='text-font-family_default text-heading4 text-color-accent'>$ 20,00</p>
                 </div>
             </div>
         </Link>

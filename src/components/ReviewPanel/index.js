@@ -15,13 +15,13 @@ const ReviewPanel = () => {
     return (
         <div id='container-review'>
             <div className='container-review__list-review'>
-                <p className='text-font-family_default text-heading3 text-color_black'>Reviews for lira earings</p>
+                <p className='text-font-family_default text-heading3 text-color-black'>Reviews for lira earings</p>
                 <ReviewBox />
                 <ReviewBox />
                 <ReviewBox />
             </div>
             <div className='container-review__review-form'>
-                <p className='text-font-family_default text-heading3 text-color_black'>Add a Review</p>
+                <p className='text-font-family_default text-heading3 text-color-black'>Add a Review</p>
                 <p className='text-font-family_default text-body-medium text-color-dark-gray'>Your email address will not be published. Required fields are marked *</p>
                 <CustomInput
                     type={INPUT_TYPE.HAVE_LABEL}

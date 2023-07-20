@@ -53,6 +53,12 @@
   color: var(--color-black);
   border-radius: 0.5rem;
   margin-left: 1.5rem;
+  transition: 0.4s;
+}
+
+.container-shopdetail__content__button-group > button:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .container-shopdetail__content__social-icon-group {

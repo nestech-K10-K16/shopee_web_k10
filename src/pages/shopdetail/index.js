@@ -5,8 +5,8 @@ import { BUTTON_TYPE } from '../../constants/common'
 import ListCard from '../../components/listcards'
 import CardShop from '../../components/cardshop'
 import TabView from '../../components/tabview'
-import './style.css'
 import QuantityInput from '../../components/quantityInput'
+import './style.css'
 
 const ShopDetail = () => {
 
@@ -39,8 +39,8 @@ const ShopDetail = () => {
                 </div>
                 <div className='container-shopdetail__content'>
                     <div className='container-shopdetail__content__title-group'>
-                        <p className='text-font-family_default text-heading2 text-color_black'>Lira Earrings</p>
-                        <p className='text-font-family_default text-heading4 text-color_accent'>$ 20,00</p>
+                        <p className='text-font-family_default text-heading2 text-color-black'>Lira Earrings</p>
+                        <p className='text-font-family_default text-heading4 text-color-accent'>$ 20,00</p>
                     </div>
                     <div className='container-shopdetail__content__evaluate-group'>
                         <div className='container-shopdetail__content__evaluate-group__rate-box'>
@@ -67,8 +67,8 @@ const ShopDetail = () => {
                         </div>
                     </div>
                     <div className='container-shopdetail__content__categories_group'>
-                        <p className='text-font-family_default text-heading5 text-color_black'>SKU: <p className='text-font-family_default text-heading5 text-color-dark-gray'> 12</p></p>
-                        <p className='text-font-family_default text-heading5 text-color_black'>Categories: <p className='text-font-family_default text-heading5 text-color-dark-gray'> Fashion, Style</p></p>
+                        <p className='text-font-family_default text-heading5 text-color-black'>SKU: <p className='text-font-family_default text-heading5 text-color-dark-gray'> 12</p></p>
+                        <p className='text-font-family_default text-heading5 text-color-black'>Categories: <p className='text-font-family_default text-heading5 text-color-dark-gray'> Fashion, Style</p></p>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@ const ListCard = ({ showTitle = true, renderItem, title }) => {
                 <AppButton className='
                 text-font-family_default 
                 text-heading4 
-                text-color_accent'>
+                text-color-accent'>
                     View All
                 </AppButton>
             </div>

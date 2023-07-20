@@ -11,18 +11,21 @@ const TabView = () => {
 
     return (
         <>
-            <nav className="container-tabView">
-                {
-                    TABVIEW_SHOP_DETAIL.map((e) => {
-                        return <Tabselector
-                            isActive={selectedTab === e.idTab}
-                            onClick={() => setSelectedTab(e.idTab)}
-                        >
-                            {e.titleTabSelector}
-                        </Tabselector>
-                    })
-                }
-            </nav>
+            <div className="container-tabView">
+                <div className='container-tabView__tab-selcector-group'>
+                    {
+                        TABVIEW_SHOP_DETAIL.map((e) => {
+                            return <Tabselector
+                                isActive={selectedTab === e.idTab}
+                                onClick={() => setSelectedTab(e.idTab)}
+                            >
+                                {e.titleTabSelector}
+                            </Tabselector>
+                        })
+                    }
+                </div>
+                <div className='line'></div>
+            </div>
             <div className="container-tabPanel">
                 {
                     TABVIEW_SHOP_DETAIL.map((e) => {

@@ -17,13 +17,13 @@ const Navigation = () => {
             container-home--header__navigation-child1
             "
                 >
-                    <NavLink to={PATHNAME_LIST.SHOP} className="text-default text-font-family_default text-color_black">
+                    <NavLink to={PATHNAME_LIST.SHOP} className="text-default text-font-family_default text-color-black">
                         Shop
                     </NavLink>
-                    <NavLink to={PATHNAME_LIST.BLOG} className="text-default text-font-family_default text-color_black">
+                    <NavLink to={PATHNAME_LIST.BLOG} className="text-default text-font-family_default text-color-black">
                         Blog
                     </NavLink>
-                    <NavLink to={PATHNAME_LIST.OUR_STORY} className="text-default text-font-family_default text-color_black">
+                    <NavLink to={PATHNAME_LIST.OUR_STORY} className="text-default text-font-family_default text-color-black">
                         Our Story
                     </NavLink>
                 </div>
@@ -39,7 +39,7 @@ const Navigation = () => {
                     <NavLink to={PATHNAME_LIST.CART}>
                         <AppButton type={BUTTON_TYPE.ICON} path={IC_cart} />
                     </NavLink>
-                    <NavLink to={PATHNAME_LIST.USER}>
+                    <NavLink to={PATHNAME_LIST.MY_ACCOUNT}>
                         <AppButton type={BUTTON_TYPE.ICON} path={IC_user} />
                     </NavLink>
 

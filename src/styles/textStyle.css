@@ -4,11 +4,11 @@
     brightness(96%) contrast(121%);
 }
 /* text-colors */
-.text-color_accent {
+.text-color-accent {
   color: var(--color-accent);
 }
 
-.text-color_black {
+.text-color-black {
   color: var(--color-black);
 }
 

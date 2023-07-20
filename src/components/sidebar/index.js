@@ -24,7 +24,7 @@ const Sidebar = () => {
                 <DropDown title={dropdownValue2} onItemClick={({ value }) => setDropdownValue2(value)} />
             </div>
             <div className='container-sidebar__switch-item'>
-                <p className='text-font-family_default text-heading5 text-color_black'>On sale</p>
+                <p className='text-font-family_default text-heading5 text-color-black'>On sale</p>
                 <Switch
                     rounded={true}
                     isToggle={onsale}
@@ -32,7 +32,7 @@ const Sidebar = () => {
                 />
             </div>
             <div className='container-sidebar__switch-item'>
-                <p className='text-font-family_default text-heading5 text-color_black'>In stock</p>
+                <p className='text-font-family_default text-heading5 text-color-black'>In stock</p>
                 <Switch
                     rounded={true}
                     isToggle={instock}

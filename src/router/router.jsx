@@ -1,4 +1,6 @@
+import ContactUs from "../pages/contactus";
 import HomePage from "../pages/home";
+import MyAccount from "../pages/myaccount";
 import ShopPage from "../pages/shop";
 import ShopDetail from "../pages/shopdetail";
 
@@ -6,6 +8,8 @@ export const ROUTE_ID = {
   HOME: "HomeRoute",
   SHOP: "ShopRoute",
   SHOP_DETAIL: "ShopDetailRoute",
+  CONTRACT_US: "ContactUsRoute",
+  MY_ACCOUNT: "MyAccountRoute",
 };
 
 export const PATHNAME_LIST = {
@@ -16,7 +20,8 @@ export const PATHNAME_LIST = {
   OUR_STORY: "/Ourstory",
   SEARCH: "/Search",
   CART: "/Cart",
-  USER: "/User",
+  MY_ACCOUNT: "/MyAccount",
+  CONTRACT_US: "/contact",
 };
 
 export const LAYOUT_TYPE = {
@@ -48,4 +53,24 @@ export const ShopDetailRoute = {
   layout: LAYOUT_TYPE.LAYOUT_DEFAULT,
 };
 
-export const appRoute = [HomeRoute, ShopRoute, ShopDetailRoute];
+export const ContactUsRoute = {
+  id: ROUTE_ID.CONTRACT_US,
+  path: PATHNAME_LIST.CONTRACT_US,
+  component: ContactUs,
+  layout: LAYOUT_TYPE.LAYOUT_DEFAULT,
+};
+
+export const MyAccountRoute = {
+  id: ROUTE_ID.MY_ACCOUNT,
+  path: PATHNAME_LIST.MY_ACCOUNT,
+  component: MyAccount,
+  layout: LAYOUT_TYPE.LAYOUT_DEFAULT,
+};
+
+export const appRoute = [
+  HomeRoute,
+  ShopRoute,
+  ShopDetailRoute,
+  ContactUsRoute,
+  MyAccountRoute,
+];

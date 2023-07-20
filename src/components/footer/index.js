@@ -10,9 +10,9 @@ const Footer = () => {
         <div id='container-footer'>
             <div className='container-footer_content-group1'>
                 <div>
-                    <Link to={'/contact'} className="text-default text-font-family_default text-color_black">CONTACT</Link>
-                    <Link to={'/terms'} className="text-default text-font-family_default text-color_black">TERMS OF SERVICES</Link>
-                    <Link to={'/shipping'} className="text-default text-font-family_default text-color_black">SHIPPING AND RETURNS</Link>
+                    <Link to={'/contact'} className="text-default text-font-family_default text-color-black">CONTACT</Link>
+                    <Link to={'/terms'} className="text-default text-font-family_default text-color-black">TERMS OF SERVICES</Link>
+                    <Link to={'/shipping'} className="text-default text-font-family_default text-color-black">SHIPPING AND RETURNS</Link>
                 </div>
                 <CustomInput
                     type={INPUT_TYPE.ICON}
