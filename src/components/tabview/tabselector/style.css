@@ -1,0 +1,8 @@
+#tab-selector {
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.boder-color-black {
+  border-bottom-color: var(--color-black) !important;
+}

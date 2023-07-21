@@ -1,14 +1,23 @@
+.container-listcards {
+  width: 78rem;
+}
+
 .container-listcards__title-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem 0;
 }
 
 .container-listcards__list-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.container-listcards__list-items > a {
+  margin: 0.5rem;
 }
 
 .container-listcards__title-group button:hover {

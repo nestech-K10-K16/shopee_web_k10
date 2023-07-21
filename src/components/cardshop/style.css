@@ -1,6 +1,5 @@
 #container-cardshop {
-  width: 23.75rem;
-  height: 29.5rem;
+  width: 16rem;
 }
 
 .container-cardshop__image {
@@ -13,24 +12,44 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1.5rem;
+  height: 3rem;
   background-color: var(--color-white-transparent);
-  transition: 2s;
+  animation: buttonUp 0.2s;
+  transition: 0.6s;
 }
 
-.container-cardshop__image > button > p {
-  margin: auto;
-}
-
-#container-cardshop > img {
+.container-cardshop__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container-cardshop__label-group > p {
-  padding: 4px 0;
+  padding: 0.25rem 0;
   text-align: left;
 }
 
 /* hover */
+.container-cardshop__image > button:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
 .container-cardshop__image:hover > button {
   display: block;
+}
+
+/* key framse */
+@keyframes buttonUp {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    height: 3rem;
+  }
 }

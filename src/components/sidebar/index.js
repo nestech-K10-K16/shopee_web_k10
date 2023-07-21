@@ -2,25 +2,29 @@ import React, { useState } from 'react';
 import CustomInput from '../CustomInput';
 import DropDown from '../dropdown';
 import Switch from '../switch';
+import { IC_search } from '../../assets';
 import "./style.css"
 
 const Sidebar = () => {
 
-    const [onsale, setOnsale] = useState(false)
-    const [instock, setInstock] = useState(false)
+    const [onsale, setOnsale] = useState(false);
+    const [instock, setInstock] = useState(false);
+    const [dropdownValue1, setDropdownValue1] = useState('Shop by');
+    const [dropdownValue2, setDropdownValue2] = useState('Sort by');
+
 
     return (
         <div className='container-sidebar'>
             <CustomInput
-                icon={<i class="fa-sharp fa-solid fa-magnifying-glass"></i>}
+                icon={<img src={IC_search} />}
                 placeholder={'Search...'}
             />
             <div className='container-sidebar__dropdown-group'>
-                <DropDown title={'Shop By'} />
-                <DropDown title={'Sort By'} />
+                <DropDown title={dropdownValue1} onItemClick={({ value }) => setDropdownValue1(value)} />
+                <DropDown title={dropdownValue2} onItemClick={({ value }) => setDropdownValue2(value)} />
             </div>
             <div className='container-sidebar__switch-item'>
-                <p className='text-font-family_default text-heading5 text-color_black'>On sale</p>
+                <p className='text-font-family_default text-heading5 text-color-black'>On sale</p>
                 <Switch
                     rounded={true}
                     isToggle={onsale}
@@ -28,7 +32,7 @@ const Sidebar = () => {
                 />
             </div>
             <div className='container-sidebar__switch-item'>
-                <p className='text-font-family_default text-heading5 text-color_black'>In stock</p>
+                <p className='text-font-family_default text-heading5 text-color-black'>In stock</p>
                 <Switch
                     rounded={true}
                     isToggle={instock}

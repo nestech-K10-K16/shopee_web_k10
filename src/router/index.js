@@ -2,8 +2,8 @@ import React, { Fragment } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { LAYOUT_TYPE, appRoute } from './router'
 import LayoutDefault from './Layouts/LayoutDefault'
-import '../styles/index.css'
 import LayoutSidebar from './Layouts/LayoutSidebar'
+import '../styles/index.css'
 
 const MainRoute = () => {
 
