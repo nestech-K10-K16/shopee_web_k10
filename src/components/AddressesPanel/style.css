@@ -1,0 +1,46 @@
+.container-AccountDetailPanel__input-group {
+  width: 36.25rem;
+}
+
+#container-AddressesPanel {
+  display: flex;
+}
+
+#container-AddressesPanel > div > p {
+  margin-bottom: 1.5rem;
+}
+
+.container-AccountDetailPanel__input-group {
+  margin-right: 5.5rem;
+}
+
+.container-AccountDetailPanel__input-group > div {
+  width: 36.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.container-AccountDetailPanel__input-group > button {
+  display: block;
+  width: 15.25rem;
+  height: 3.3125rem;
+  background-color: var(--color-black);
+  border-radius: 0.25rem;
+  text-align: center;
+  border: 1px solid var(--color-black);
+  transition: 0.4s;
+}
+
+.container-AccountDetailPanel__input-group > button:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.container-AddressesPanel__input-group__name-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-AddressesPanel__shipping-address > button {
+  margin-bottom: 0.87rem;
+}

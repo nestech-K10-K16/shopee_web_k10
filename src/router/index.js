@@ -1,8 +1,9 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { LAYOUT_TYPE, appRoute } from './router'
 import LayoutDefault from './Layouts/LayoutDefault'
 import LayoutSidebar from './Layouts/LayoutSidebar'
+import LayoutSidebarBlog from './Layouts/LayoutSidebarBlog'
 import '../styles/index.css'
 
 const MainRoute = () => {
@@ -13,6 +14,8 @@ const MainRoute = () => {
                 return LayoutDefault
             case LAYOUT_TYPE.LAYOUT_SIDE_BAR:
                 return LayoutSidebar
+            case LAYOUT_TYPE.LAYOUT_SIDE_BAR_BLOG:
+                return LayoutSidebarBlog
             default:
                 return LayoutDefault
         }

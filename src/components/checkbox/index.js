@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./style.css"
 
-const CheckBox = ({ label }) => {
+const CheckBox = ({ label, classNameLabel }) => {
 
     const [isChecked, setIsChecked] = useState(false)
 
@@ -9,7 +9,7 @@ const CheckBox = ({ label }) => {
         <div id='container_check-box' >
             <label>
                 <input type="checkbox" checked={isChecked} onClick={() => setIsChecked(!isChecked)} />
-                <p>{label || ''}</p>
+                <p className={classNameLabel}>{label || ''}</p>
             </label>
         </div>
     )

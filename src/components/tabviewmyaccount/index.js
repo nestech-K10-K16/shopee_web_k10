@@ -1,18 +1,18 @@
 import React from 'react'
 import { TabPanel, useTabs } from "react-headless-tabs";
-import { TABVIEW_MY_ACCOUNT, tabsMyAccount } from '../../constants/common';
+import { TABVIEW_my_acount, tabsmy_account } from '../../constants/common';
 import TabselectorMyAccount from './tabselectormyaccount';
 import "./style.css"
 
-const TabViewMyAccount = () => {
+const TabViewmy_account = () => {
 
-    const [selectedTab, setSelectedTab] = useTabs(tabsMyAccount);
+    const [selectedTab, setSelectedTab] = useTabs(tabsmy_account);
 
     return (
         <>
             <div id="container-tabviewmyaccount">
                 {
-                    TABVIEW_MY_ACCOUNT.map((e) => {
+                    TABVIEW_my_acount.map((e) => {
                         return <TabselectorMyAccount
                             isActive={selectedTab === e.idTab}
                             onClick={() => setSelectedTab(e.idTab)}
@@ -24,7 +24,7 @@ const TabViewMyAccount = () => {
             </div>
             <div id="container-tabview-myaccount-panel">
                 {
-                    TABVIEW_MY_ACCOUNT.map((e) => {
+                    TABVIEW_my_acount.map((e) => {
                         return <TabPanel hidden={selectedTab !== e.idTab}>{<e.PanelComponent />}</TabPanel>
                     })
                 }
@@ -33,4 +33,4 @@ const TabViewMyAccount = () => {
     )
 }
 
-export default TabViewMyAccount
+export default TabViewmy_account

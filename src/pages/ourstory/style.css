@@ -1,0 +1,45 @@
+#container-OurStory {
+  margin-bottom: 2rem;
+}
+
+#container-OurStory > p {
+  text-align: center;
+}
+
+#container-OurStory > div {
+  margin: 0 auto 0 auto;
+}
+
+#container-OurStory > p:nth-child(1) {
+  padding-bottom: 1.5rem;
+}
+
+#container-OurStory > p:nth-child(2) {
+  padding-bottom: 2.88rem;
+}
+
+.container-OurStory__about-text {
+  width: 41.875rem;
+  text-align: left;
+}
+
+.container-OurStory__top-trens,
+.container-OurStory__produce {
+  width: 41.875rem;
+  margin-top: 2.44rem !important;
+}
+
+.container-OurStory__top-trens > p:nth-child(1),
+.container-OurStory__produce > p:nth-child(1) {
+  margin-bottom: 1.44rem;
+}
+
+.container-OurStory__top-trens > div:nth-child(3),
+.container-OurStory__produce > div:nth-child(3) {
+  margin-top: 3rem;
+}
+
+.container-OurStory__top-trens > ul {
+  margin-top: 1rem;
+  padding-left: 2rem;
+}

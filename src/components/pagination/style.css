@@ -1,0 +1,29 @@
+#container-Pagination-content-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 2.5rem;
+}
+
+#container-Pagination-content-group > div {
+  margin-bottom: 4rem;
+}
+
+#container-pagination-tabs-group {
+  text-align: center;
+  margin-bottom: 15.625rem;
+}
+
+.container-pagination__tab {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--color-white);
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-gray);
+  margin-right: 0.5rem;
+}
+
+.container-pagination__tab.active {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}

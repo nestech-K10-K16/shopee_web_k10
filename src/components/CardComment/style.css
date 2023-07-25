@@ -1,0 +1,35 @@
+#wrapper-card-comment {
+  padding-bottom: 2.44rem;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+#container-card-comment {
+  display: flex;
+  align-items: flex-start;
+}
+
+.container-card-comment__avatar {
+  width: 4.19rem;
+  height: 4.19rem;
+}
+
+.container-card-comment__content_account-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-card-comment__content {
+  padding-left: 1.5rem;
+}
+
+#container-reply-comment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#container-reply-comment > div {
+  width: 37.6875rem !important;
+  margin-top: 3rem !important;
+}

@@ -2,7 +2,6 @@ import React from 'react'
 import CustomInput from '../../CustomInput'
 import AppButton from '../../Appbutton'
 import CheckBox from '../../checkbox'
-import { Link } from 'react-router-dom'
 import "./style.css"
 
 const SignInPanel = () => {

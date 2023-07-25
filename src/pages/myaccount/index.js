@@ -3,7 +3,7 @@ import TabViewMyAccount from '../../components/tabviewmyaccount'
 import { Link } from 'react-router-dom'
 import "./style.css"
 
-const MyAccount = () => {
+const myaccount = () => {
     return (
         <div id='container-myaccount'>
             <p className='text-font-family_default text-heading1 text-color-black'>My account</p>
@@ -13,4 +13,4 @@ const MyAccount = () => {
     )
 }
 
-export default MyAccount
+export default myaccount

@@ -4,8 +4,8 @@ import { TABVIEW_SHOP_DETAIL, tabsShopDetail } from '../../constants/common';
 import Tabselector from './tabselector';
 import './style.css'
 
-const TabView = () => {
-    const [selectedTab, setSelectedTab] = useTabs(tabsShopDetail);
+const TabView = ({ dataTabview = TABVIEW_SHOP_DETAIL, useTabsData = tabsShopDetail }) => {
+    const [selectedTab, setSelectedTab] = useTabs(useTabsData);
 
     console.log('tabview')
 
@@ -14,7 +14,7 @@ const TabView = () => {
             <div className="container-tabView">
                 <div className='container-tabView__tab-selcector-group'>
                     {
-                        TABVIEW_SHOP_DETAIL.map((e) => {
+                        dataTabview.map((e) => {
                             return <Tabselector
                                 isActive={selectedTab === e.idTab}
                                 onClick={() => setSelectedTab(e.idTab)}
@@ -28,7 +28,7 @@ const TabView = () => {
             </div>
             <div className="container-tabPanel">
                 {
-                    TABVIEW_SHOP_DETAIL.map((e) => {
+                    dataTabview.map((e) => {
                         return <TabPanel hidden={selectedTab !== e.idTab}>{<e.PanelComponent />}</TabPanel>
                     })
                 }

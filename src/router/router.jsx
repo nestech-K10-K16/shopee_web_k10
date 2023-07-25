@@ -1,6 +1,11 @@
+import MyAccount from "../pages/My_Account";
+import Blog from "../pages/blog";
 import ContactUs from "../pages/contactus";
 import HomePage from "../pages/home";
-import MyAccount from "../pages/myaccount";
+import myaccount from "../pages/myaccount";
+import OrderDetail from "../pages/orderdetail";
+import OurStory from "../pages/ourstory";
+import PostDetail from "../pages/postdetail";
 import ShopPage from "../pages/shop";
 import ShopDetail from "../pages/shopdetail";
 
@@ -10,6 +15,11 @@ export const ROUTE_ID = {
   SHOP_DETAIL: "ShopDetailRoute",
   CONTRACT_US: "ContactUsRoute",
   MY_ACCOUNT: "MyAccountRoute",
+  my_account: "myaccountRoute",
+  BLOG: "BlogRoute",
+  POST_DETAIL: "PostDetailRoute",
+  OUR_STORY: "OurStoryRoute",
+  ORDER_DETAIL: "OrderDetailRoute",
 };
 
 export const PATHNAME_LIST = {
@@ -21,12 +31,16 @@ export const PATHNAME_LIST = {
   SEARCH: "/Search",
   CART: "/Cart",
   MY_ACCOUNT: "/MyAccount",
+  ORDER_DETAIL: "/MyAccount/order-detail",
+  my_account: "/my_account",
   CONTRACT_US: "/contact",
+  POST_DETAIL: "/Blog/post-detail",
 };
 
 export const LAYOUT_TYPE = {
   LAYOUT_DEFAULT: 1,
   LAYOUT_SIDE_BAR: 2,
+  LAYOUT_SIDE_BAR_BLOG: 3,
 };
 
 export const DEFAULT_PATHNAME = PATHNAME_LIST.HOME;
@@ -60,10 +74,45 @@ export const ContactUsRoute = {
   layout: LAYOUT_TYPE.LAYOUT_DEFAULT,
 };
 
+export const myaccountRoute = {
+  id: ROUTE_ID.my_account,
+  path: PATHNAME_LIST.my_account,
+  component: myaccount,
+  layout: LAYOUT_TYPE.LAYOUT_DEFAULT,
+};
+
 export const MyAccountRoute = {
   id: ROUTE_ID.MY_ACCOUNT,
   path: PATHNAME_LIST.MY_ACCOUNT,
   component: MyAccount,
+  layout: LAYOUT_TYPE.LAYOUT_DEFAULT,
+};
+
+export const BlogRoute = {
+  id: ROUTE_ID.MY_ACCOUNT,
+  path: PATHNAME_LIST.BLOG,
+  component: Blog,
+  layout: LAYOUT_TYPE.LAYOUT_SIDE_BAR_BLOG,
+};
+
+export const PostDetailRoute = {
+  id: ROUTE_ID.POST_DETAIL,
+  path: PATHNAME_LIST.POST_DETAIL,
+  component: PostDetail,
+  layout: LAYOUT_TYPE.LAYOUT_DEFAULT,
+};
+
+export const OurStoryRoute = {
+  id: ROUTE_ID.OUR_STORY,
+  path: PATHNAME_LIST.OUR_STORY,
+  component: OurStory,
+  layout: LAYOUT_TYPE.LAYOUT_DEFAULT,
+};
+
+export const OrderDetailRoute = {
+  id: ROUTE_ID.ORDER_DETAIL,
+  path: PATHNAME_LIST.ORDER_DETAIL,
+  component: OrderDetail,
   layout: LAYOUT_TYPE.LAYOUT_DEFAULT,
 };
 
@@ -72,5 +121,10 @@ export const appRoute = [
   ShopRoute,
   ShopDetailRoute,
   ContactUsRoute,
+  myaccountRoute,
   MyAccountRoute,
+  BlogRoute,
+  PostDetailRoute,
+  OurStoryRoute,
+  OrderDetailRoute,
 ];
