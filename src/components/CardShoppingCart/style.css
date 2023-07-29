@@ -1,0 +1,29 @@
+#container-CardShoppingCart {
+  width: 36.1rem;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 2.44rem;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.container-CardShoppingCart--item-image {
+  width: 8.5rem;
+  height: 8.5rem;
+}
+
+.container-CardShoppingCart--item-image > img {
+  width: 100%;
+}
+
+.container-CardShoppingCart__info-group {
+  margin-left: 2.44rem;
+  margin-right: 7.75rem;
+}
+
+.container-CardShoppingCart__info-group > p:nth-child(1) {
+  margin-bottom: 0.88rem;
+}
+
+#container-CardShoppingCart > button {
+  margin-left: 3rem;
+}

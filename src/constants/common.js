@@ -19,7 +19,9 @@ export const COLORS = {
 export const BUTTON_TYPE = {
     ICON: 1,
     DEFAULT: 2,
-    LINK: 3
+    LINK: 3,
+    WEB_STYLE: 4,
+    WEB_HOVER_STYLE: 5
 }
 
 export const INPUT_TYPE = {
@@ -27,6 +29,23 @@ export const INPUT_TYPE = {
     ICON: 2,
     HAVE_LABEL: 3
 }
+
+export const DROP_DONW_TYPE = {
+    DEFAULT: 1,
+    CALCULATE_SHIPPING: 2,
+}
+
+export const CALCULATE_SHIPPING_DROP_DOWN = [
+    {
+        label: 'SELECT A COUNTRY'
+    },
+    {
+        label: 'CITY'
+    },
+    {
+        label: 'POST CODE / ZIP'
+    }
+]
 
 export const INPUT_SIZE = {
     LONG: '392px',
@@ -217,3 +236,21 @@ export const ODERS_TABLE_PANEL = {
     ],
 }
 
+export const PAYMENT_METHOD = [
+    {
+        payment_title: 'Direct bank transfer',
+        payment_detail: 'Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account'
+    },
+    {
+        payment_title: 'Check payments',
+        payment_detail: 'Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account'
+    },
+    {
+        payment_title: 'Cash on delivery',
+        payment_detail: 'Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account'
+    },
+    {
+        payment_title: 'PayPal ',
+        payment_detail: 'Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account'
+    },
+]

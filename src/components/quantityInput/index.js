@@ -4,7 +4,9 @@ import CustomInput from '../CustomInput'
 import './style.css'
 
 const QuantityInput = ({
-    getCount = () => { }
+    getCount = () => { },
+    width,
+    height
 }) => {
 
     const [count, setCount] = useState(0)
@@ -24,7 +26,7 @@ const QuantityInput = ({
     console.log('QuantityInput')
 
     return (
-        <div id='container-quantity-input'>
+        <div id='container-quantity-input' style={{ width: width, height: height }}>
             <AppButton
                 className='text-font-family_default text-heading5 text-color-dark-gray'
                 onClick={handleDecreaseCount}

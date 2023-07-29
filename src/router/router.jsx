@@ -1,5 +1,7 @@
 import MyAccount from "../pages/My_Account";
 import Blog from "../pages/blog";
+import Cart from "../pages/cart";
+import Checkout from "../pages/checkout";
 import ContactUs from "../pages/contactus";
 import HomePage from "../pages/home";
 import myaccount from "../pages/myaccount";
@@ -20,6 +22,8 @@ export const ROUTE_ID = {
   POST_DETAIL: "PostDetailRoute",
   OUR_STORY: "OurStoryRoute",
   ORDER_DETAIL: "OrderDetailRoute",
+  CART: "CartRoute",
+  CHECK_OUT: "CheckoutRoute",
 };
 
 export const PATHNAME_LIST = {
@@ -35,6 +39,7 @@ export const PATHNAME_LIST = {
   my_account: "/my_account",
   CONTRACT_US: "/contact",
   POST_DETAIL: "/Blog/post-detail",
+  CHECK_OUT: "/Cart/checkout",
 };
 
 export const LAYOUT_TYPE = {
@@ -116,6 +121,20 @@ export const OrderDetailRoute = {
   layout: LAYOUT_TYPE.LAYOUT_DEFAULT,
 };
 
+export const CartRoute = {
+  id: ROUTE_ID.CART,
+  path: PATHNAME_LIST.CART,
+  component: Cart,
+  layout: LAYOUT_TYPE.LAYOUT_DEFAULT,
+};
+
+export const CheckoutRoute = {
+  id: ROUTE_ID.CHECK_OUT,
+  path: PATHNAME_LIST.CHECK_OUT,
+  component: Checkout,
+  layout: LAYOUT_TYPE.LAYOUT_DEFAULT,
+};
+
 export const appRoute = [
   HomeRoute,
   ShopRoute,
@@ -127,4 +146,6 @@ export const appRoute = [
   PostDetailRoute,
   OurStoryRoute,
   OrderDetailRoute,
+  CartRoute,
+  CheckoutRoute,
 ];

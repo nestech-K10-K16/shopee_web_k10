@@ -1,6 +1,7 @@
 #container_check-box > label {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 #container_check-box > label > input {

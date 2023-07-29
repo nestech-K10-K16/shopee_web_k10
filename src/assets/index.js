@@ -10,6 +10,7 @@ export { default as IMG_avtar1 } from './imgs/avatars/IMG_avtar1.svg'
 export { default as IMG_ourstory_item1 } from './imgs/ourstory/IMG_ourstory_item1.svg'
 // Icons
 export { default as IC_cart } from './icons/IC_cart.svg'
+export { default as IC_close } from './icons/IC_close.svg'
 export { default as IC_search } from './icons/IC_search.svg'
 export { default as IC_user } from './icons/IC_user.svg'
 export { default as IC_in } from './icons/IC_in.png'
