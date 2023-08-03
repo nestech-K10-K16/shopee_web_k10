@@ -14,3 +14,11 @@ button {
   border: none;
   cursor: pointer;
 }
+
+input {
+  width: 100%;
+}
+
+.padding {
+  padding: 4rem 0;
+}

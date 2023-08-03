@@ -1,0 +1,23 @@
+.container-tabView {
+  display: flex;
+  position: relative;
+}
+
+.container-tabView .line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.0625rem;
+  background-color: var(--color-gray);
+  opacity: 0.5;
+}
+
+.container-tabPanel {
+  padding: 2.5rem 0;
+}
+
+.container-tabView__tab-selcector-group button {
+  margin-right: 3.06rem;
+  border-bottom: 2px solid transparent;
+}

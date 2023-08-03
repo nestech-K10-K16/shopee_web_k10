@@ -1,27 +1,28 @@
 import React from 'react'
 import AppButton from '../Appbutton'
-import CardShop from '../cardshop'
 import './style.css'
 
-const ListCard = () => {
-    return (
-        <div id='container-listcards'>
+const ListCard = ({ layoutItemType = 'HOME_SCREEN', showTitle = true, renderItem, title }) => {
+
+    const renderTitle = () => {
+        return (
             <div className='container-listcards__title-group'>
-                <p className='text-font-family_default text-heading1'>Shop The Latest</p>
+                <p className='text-font-family_default text-heading1'>{title || 'null'}</p>
                 <AppButton className='
                 text-font-family_default 
                 text-heading4 
-                text-color_accent'>
+                text-color-accent'>
                     View All
                 </AppButton>
             </div>
-            <div className='container-listcards__list-items'>
-                <CardShop />
-                <CardShop />
-                <CardShop />
-                <CardShop />
-                <CardShop />
-                <CardShop />
+        )
+    }
+
+    return (
+        <div id='container-listcards'>
+            {showTitle ? renderTitle() : <></>}
+            <div className={`${layoutItemType === 'HOME_SCREEN' ? 'container-listcards__list-items-lagre' : 'container-listcards__list-items'}`}>
+                {renderItem}
             </div>
         </div>
     )

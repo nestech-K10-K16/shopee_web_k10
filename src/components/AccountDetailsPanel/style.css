@@ -1,0 +1,38 @@
+#container-AccountDetailPanel {
+  width: 31.25rem;
+  margin: 0 auto 0 auto;
+}
+
+#container-AccountDetailPanel > p {
+  text-align: center;
+  margin-bottom: 2.31rem;
+}
+
+.container-AccountDetailPanel__input-group-1 > div,
+.container-AccountDetailPanel__input-group-2 > div {
+  margin-bottom: 3.13rem;
+}
+
+.container-AccountDetailPanel__input-group-1 > div > p {
+  font-size: 0.75rem;
+}
+
+.container-AccountDetailPanel__input-group-2 > p {
+  margin-bottom: 2.56rem;
+}
+
+#container-AccountDetailPanel > button {
+  display: block;
+  width: 31.25rem;
+  height: 3.3125rem;
+  background-color: var(--color-black);
+  border-radius: 0.25rem;
+  text-align: center;
+  border: 1px solid var(--color-black);
+  transition: 0.4s;
+}
+
+#container-AccountDetailPanel > button:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}

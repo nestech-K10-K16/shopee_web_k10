@@ -1,0 +1,61 @@
+#container-OrderDetail {
+  display: flex;
+}
+
+#container-OrderDetail > div > p {
+  margin-bottom: 1.8rem;
+}
+
+.container-OrderDetail__order-info {
+  width: 31.4rem;
+}
+
+.container-OrderDetail__order-info_wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-OrderDetail__order-info_wraper > div > div {
+  margin-bottom: 2.44rem;
+}
+
+.container-OrderDetail__order-summary {
+  margin-left: 10.56rem;
+  width: 36.3rem;
+}
+
+.container-OrderDetail__order-summary__bills {
+  background-color: var(--color-light-gray);
+  padding: 2.44rem 3.69rem;
+}
+
+.container-OrderDetail__order-summary__bills > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-OrderDetail__order-summary__bills__title-group {
+  padding-bottom: 1.12rem;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.container-OrderDetail__order-summary__bills__item {
+  padding: 0.6rem 0;
+}
+
+.container-OrderDetail__order-summary__bills__subtotal {
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-gray);
+}
+
+.container-OrderDetail__order-summary__bills__shipping {
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-gray);
+}
+
+.container-OrderDetail__order-summary__bills__total {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-gray);
+}

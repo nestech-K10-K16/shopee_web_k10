@@ -1,0 +1,7 @@
+#container-aditional > p {
+  display: flex;
+}
+
+#container-aditional > p > p {
+  margin-left: 0.5rem;
+}

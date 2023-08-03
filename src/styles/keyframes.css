@@ -1,0 +1,9 @@
+@keyframes buttonUp {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 48px;
+  }
+}

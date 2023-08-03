@@ -1,0 +1,57 @@
+#container-checkout > p {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.container-checkout__apply-coupon {
+  width: 36.25rem;
+  margin-bottom: 3rem;
+}
+
+.container-checkout__apply-coupon > p:nth-child(1) {
+  margin-bottom: 1rem;
+}
+
+.container-checkout__apply-coupon > p:nth-child(2) {
+  margin-bottom: 1.5rem;
+}
+
+.container-checkout__apply-coupon_code-field {
+  border: 1px solid var(--color-light-gray);
+  padding: 1.5rem;
+}
+
+.container-checkout__apply-coupon_code-field > p {
+  margin-bottom: 2.44rem;
+}
+
+.container-checkout__apply-coupon_code-field > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-checkout__billingaddress-yourorder {
+  display: flex;
+}
+
+.container-checkout__billingaddress-yourorder > div:nth-child(1) > p {
+  margin-bottom: 1.69rem;
+}
+
+.container-checkout__billingaddress-yourorder > div:nth-child(2) {
+  margin-left: 0 !important;
+}
+
+.container-checkout__billingaddress-yourorder > div:nth-child(2) > p {
+  margin-bottom: 2.44rem;
+}
+
+.container-checkout__billingaddress-yourorder__check-box-group {
+  margin-bottom: 2.31rem;
+}
+
+.container-checkout__billingaddress-yourorder__check-box-group
+  > div:nth-child(1) {
+  margin-bottom: 1.12rem;
+}

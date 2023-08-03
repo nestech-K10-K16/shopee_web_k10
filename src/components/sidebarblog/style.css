@@ -1,0 +1,16 @@
+.container-sidebarblog__input-field {
+  margin-bottom: 3.875rem;
+}
+
+.container-sidebarblog__href-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-sidebarblog__href-group > a {
+  margin-bottom: 1rem;
+}
+
+.container-sidebarblog__href-group > a.active {
+  color: var(--color-black) !important;
+}

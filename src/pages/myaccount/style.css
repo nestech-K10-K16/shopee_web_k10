@@ -1,0 +1,15 @@
+#container-myaccount {
+  width: 31.25rem;
+  height: 38.8125rem;
+  margin: 8rem auto 15.4375rem auto;
+}
+
+#container-myaccount > p {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#container-myaccount > a {
+  display: table;
+  margin: 0 auto 0 auto;
+}

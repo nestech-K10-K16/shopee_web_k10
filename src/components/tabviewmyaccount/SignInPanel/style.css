@@ -1,0 +1,32 @@
+#container-SignInPanel > div:nth-child(1) {
+  margin-bottom: 2.875rem;
+}
+
+#container-SignInPanel > div:nth-child(2) {
+  margin-bottom: 1rem;
+}
+
+#container-SignInPanel > div:nth-child(3) {
+  margin-bottom: 4.3125rem;
+}
+
+#container-SignInPanel > button {
+  display: block;
+  width: 31.25rem;
+  height: 3.3125rem;
+  background-color: var(--color-black);
+  border-radius: 0.25rem;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  border: 1px solid var(--color-black);
+  transition: 0.4s;
+}
+
+#container-SignInPanel > a {
+  padding-top: 0.875rem;
+}
+
+#container-SignInPanel > button:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}

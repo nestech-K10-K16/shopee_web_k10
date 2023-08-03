@@ -1,16 +1,16 @@
 .container-sidebar {
   display: flex;
   flex-direction: column;
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 .container-sidebar__dropdown-group {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .container-sidebar__switch-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
