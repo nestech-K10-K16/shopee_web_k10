@@ -5,18 +5,18 @@ import { PATHNAME_LIST } from '../../router/router'
 import { Link } from 'react-router-dom'
 import './style.css'
 
-const CardShop = () => {
+const CardShop = ({ title, onAddItem }) => {
     return (
-        <Link to={PATHNAME_LIST.SHOP_DETAIL}>
+        <Link>
             <div to={PATHNAME_LIST.SHOP_DETAIL} id='container-cardshop'>
                 <div className='container-cardshop__image'>
                     <img src={IMG_cardshop1} />
-                    <AppButton className='text-font-family_default text-body-large text-color-black'>
+                    <AppButton onClick={onAddItem} className='text-font-family_default text-body-large text-color-black'>
                         ADD TO CART
                     </AppButton>
                 </div>
                 <div className='container-cardshop__label-group'>
-                    <p className='text-font-family_default text-heading3 text-color-black'>Lira Earrings</p>
+                    <p className='text-font-family_default text-heading3 text-color-black'>{title || 'error'}</p>
                     <p className='text-font-family_default text-heading4 text-color-accent'>$ 20,00</p>
                 </div>
             </div>

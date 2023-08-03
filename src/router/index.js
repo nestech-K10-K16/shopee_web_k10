@@ -5,6 +5,7 @@ import LayoutDefault from './Layouts/LayoutDefault'
 import LayoutSidebar from './Layouts/LayoutSidebar'
 import LayoutSidebarBlog from './Layouts/LayoutSidebarBlog'
 import '../styles/index.css'
+import { AppProvider } from '../context/AppContext'
 
 const MainRoute = () => {
 
@@ -22,28 +23,29 @@ const MainRoute = () => {
     }
 
     return (
-        <BrowserRouter>
-            <div className='container-main-router'>
-                <Routes>
-                    {appRoute.map((route) => {
-                        const Component = route.component
-                        const Layout = getLayout(route.layout)
-                        return (
-                            <Route
-                                key={route.id}
-                                path={route.path}
-                                element={
-                                    <Layout>
-                                        <Component />
-                                    </Layout>
-                                }
-                            />
-                        )
-                    })}
-                </Routes>
-            </div>
-        </BrowserRouter>
-
+        <AppProvider>
+            <BrowserRouter>
+                <div className='container-main-router'>
+                    <Routes>
+                        {appRoute.map((route) => {
+                            const Component = route.component
+                            const Layout = getLayout(route.layout)
+                            return (
+                                <Route
+                                    key={route.id}
+                                    path={route.path}
+                                    element={
+                                        <Layout>
+                                            <Component />
+                                        </Layout>
+                                    }
+                                />
+                            )
+                        })}
+                    </Routes>
+                </div>
+            </BrowserRouter>
+        </AppProvider>
     )
 }
 

@@ -23,8 +23,6 @@ const QuantityInput = ({
         setCount((value) => value - 1)
     }
 
-    console.log('QuantityInput')
-
     return (
         <div id='container-quantity-input' style={{ width: width, height: height }}>
             <AppButton

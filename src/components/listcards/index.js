@@ -2,7 +2,7 @@ import React from 'react'
 import AppButton from '../Appbutton'
 import './style.css'
 
-const ListCard = ({ showTitle = true, renderItem, title }) => {
+const ListCard = ({ layoutItemType = 'HOME_SCREEN', showTitle = true, renderItem, title }) => {
 
     const renderTitle = () => {
         return (
@@ -21,7 +21,7 @@ const ListCard = ({ showTitle = true, renderItem, title }) => {
     return (
         <div id='container-listcards'>
             {showTitle ? renderTitle() : <></>}
-            <div className='container-listcards__list-items'>
+            <div className={`${layoutItemType === 'HOME_SCREEN' ? 'container-listcards__list-items-lagre' : 'container-listcards__list-items'}`}>
                 {renderItem}
             </div>
         </div>

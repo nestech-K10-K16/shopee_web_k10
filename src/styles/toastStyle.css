@@ -1,0 +1,23 @@
+.toast-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+.Toastify__toast-container {
+  width: 48rem;
+  margin-bottom: 3.75rem;
+}
+
+.Toastify__toast {
+  background-color: var(--color-light-gray);
+}
+
+.Toastify__toast--success svg {
+  fill: var(--color-accent);
+}
+
+.Toastify__progress-bar--success {
+  background-color: var(--color-accent);
+}

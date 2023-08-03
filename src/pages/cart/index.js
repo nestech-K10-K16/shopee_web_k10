@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import CardShoppingCart from '../../components/CardShoppingCart'
 import AppButton from '../../components/Appbutton'
 import CustomInput from '../../components/CustomInput'
@@ -6,17 +6,29 @@ import DropDown from '../../components/dropdown'
 import { DROP_DONW_TYPE } from '../../constants/common'
 import { Link } from 'react-router-dom'
 import { PATHNAME_LIST } from '../../router/router'
+import { AppContext } from '../../context/AppContext'
 import "./style.css"
 
 const Cart = () => {
+
+    const { ShoppingBag, setShoppingBag } = useContext(AppContext)
+
+    // console.log(ShoppingBag)
+
     return (
         <div id='container-cart'>
             <p className='text-font-family_default text-heading1 text-color-black'>Shopping Cart</p>
             <div className='container-cart__content'>
                 <div className='container-cart__list-shopping-cart'>
-                    <CardShoppingCart />
-                    <CardShoppingCart />
-                    <CardShoppingCart />
+                    {
+                        ShoppingBag.map((product, index) => {
+                            return <CardShoppingCart title={product.title} onRemoveItem={() => {
+                                const arrtmp = ShoppingBag
+                                arrtmp.splice(index, 1)
+                                setShoppingBag([...arrtmp])
+                            }} />
+                        })
+                    }
                     <div className='container-cart__list-shopping-cart--couponcode'>
                         <AppButton width={'10.5rem'} height={'3.31rem'} className='web-button-hover-style'>
                             <p className='text-font-family_default text-body-large'>UPDATE CART</p>

@@ -191,6 +191,37 @@ export const DUMMY_DATA = [
     },
 ]
 
+export const DUMMY_DATA_PRODUCTS = [
+    {
+        id: '1',
+        title: 'Lira Earrings 1'
+    },
+    {
+        id: '2',
+        title: 'Lira Earrings 2'
+    },
+    {
+        id: '3',
+        title: 'Lira Earrings 3'
+    },
+    {
+        id: '4',
+        title: 'Lira Earrings 4'
+    },
+    {
+        id: '5',
+        title: 'Lira Earrings 5'
+    },
+    {
+        id: '6',
+        title: 'Lira Earrings 6'
+    },
+    {
+        id: '7',
+        title: 'Lira Earrings 7'
+    },
+]
+
 export const handlePagination = (currentPage, itemPerPage) => {
 
     const lastindex = currentPage * itemPerPage;
