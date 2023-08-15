@@ -8,18 +8,9 @@
   padding: 2rem 0;
 }
 
-.container-listcards__list-items {
+.container-listcards__table {
   display: grid;
-  grid-template-columns: repeat(3, 18.75rem);
-}
-
-.container-listcards__list-items-lagre {
-  display: grid;
-  grid-template-columns: repeat(3, 28.75rem);
-}
-
-.container-listcards__list-items > a {
-  margin-right: 0.5rem;
+  grid-template-columns: auto auto auto;
 }
 
 .container-listcards__title-group button:hover {

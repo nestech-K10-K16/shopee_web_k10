@@ -220,6 +220,18 @@ export const DUMMY_DATA_PRODUCTS = [
         id: '7',
         title: 'Lira Earrings 7'
     },
+    {
+        id: '8',
+        title: 'Lira Earrings 8'
+    },
+    {
+        id: '9',
+        title: 'Lira Earrings 9'
+    },
+    {
+        id: '10',
+        title: 'Lira Earrings 10'
+    },
 ]
 
 export const handlePagination = (currentPage, itemPerPage) => {
